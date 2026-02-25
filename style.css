@@ -1,0 +1,26 @@
+.header-section {
+    background-image: url("./image/macbook_mouse.jpg")
+}
+
+.header-nav {
+    color: whitesmoke;
+}
+
+.navlist {
+    display: flex;
+    list-style: none;
+    justify-content: center;
+    gap: 1rem;
+    padding-bottom: 15rem;
+
+}
+
+.navlist a:hover {
+    text-decoration: underline;
+}
+
+.header-text {
+    color: azure;
+    font-weight: bolder;
+    font-size: x-large;
+}
