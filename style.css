@@ -1,5 +1,9 @@
 .header-section {
-    background-image: url("./image/macbook_mouse.jpg")
+    background-image: url("./image/macbook_mouse.jpg");
+    height: 65vh;
+    opacity: 0.8;
+    background-attachment: fixed;
+    position: relative;
 }
 
 .header-nav {
@@ -11,7 +15,7 @@
     list-style: none;
     justify-content: center;
     gap: 1rem;
-    padding-bottom: 15rem;
+    padding-bottom: 55rem;
 
 }
 
@@ -19,8 +23,70 @@
     text-decoration: underline;
 }
 
+.hamburger-menu {
+    display: none;
+}
+
+.hamburger-menu i {
+    color: whitesmoke;
+}
+
+@media (max-width: 560px) {
+    .navlist {
+        display: none;
+    }
+
+    /* Show Hamburger Menu */
+    .hamburger-menu {
+        display: flex;
+        justify-content: flex-end;
+        margin-right: 1rem;
+        margin-top: 1rem;
+    }
+}
+
 .header-text {
     color: azure;
     font-weight: bolder;
     font-size: x-large;
+}
+
+.social-links-lists {
+    display: flex;
+    list-style: none;
+    justify-content: center;
+    gap: 1rem;
+}
+
+.social-links-lists i {
+    color: whitesmoke;
+    transition: 0.3s ease;
+}
+
+.social-links-lists i:hover {
+    transform: scale(1.2);
+    color: orange;
+}
+
+
+.profile-img {
+    position: absolute;
+    bottom: -80px;
+    /* Hanging effect */
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+.profile-img img {
+    width: 180px;
+    height: 180px;
+    border-radius: 50%;
+    border: 8px solid white;
+    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.3);
+    transition: 0.3s ease;
+}
+
+.profile-img img:hover {
+    transform: scale(1.05);
+    box-shadow: 0 0 25px rgba(255, 140, 0, 0.7);
 }

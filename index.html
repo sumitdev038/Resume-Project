@@ -32,21 +32,117 @@
   </head>
   <body>
     <!-- Header Section -->
-    <section class="row header-section">
-      <div class="container">
-        <nav class="header-nav row">
-          <ul class="navlist col">
-            <li><a href="#" class="nav-link col-md-1">Home</a></li>
-            <li><a href="#" class="nav-link col-md-1">About</a></li>
-            <li><a href="#" class="nav-link col-md-1">Skills</a></li>
-            <li><a href="#" class="nav-link col-md-1">Experience</a></li>
-            <li><a href="#" class="nav-link col-md-1">Education</a></li>
-            <li><a href="#" class="nav-link col-md-1">Portfolio</a></li>
-            <li><a href="#" class="nav-link col-md-1">Contact</a></li>
+    <header>
+      <section class="row header-section" id="header">
+        <div class="container">
+          <nav class="header-nav row">
+            <ul class="navlist col">
+              <li><a href="#" class="nav-link col-md-1">Home</a></li>
+              <li><a href="#" class="nav-link col-md-1">About</a></li>
+              <li><a href="#" class="nav-link col-md-1">Skills</a></li>
+              <li><a href="#" class="nav-link col-md-1">Experience</a></li>
+              <li><a href="#" class="nav-link col-md-1">Education</a></li>
+              <li><a href="#" class="nav-link col-md-1">Portfolio</a></li>
+              <li><a href="#" class="nav-link col-md-1">Contact</a></li>
+            </ul>
+          </nav>
+          <!-- hamburger-menu -->
+          <div class="hamburger-menu">
+            <button
+              class="navbar-toggler"
+              type="button"
+              data-bs-toggle="collapse"
+              data-bs-target="#navlist"
+              aria-controls="navlist"
+              aria-expanded="false"
+              aria-label="Expand navigation"
+            >
+              <i class="fa-solid fa-bars"></i>
+            </button>
+          </div>
+        </div>
+
+        <!-- collapasible Navigation -->
+        <div class="collapse navbar-collapse bg-dark" id="navlist">
+          <ul class="navbar-nav mx-auto">
+            <li class="nav-item">
+              <a href="#" class="nav-link text-white text-center">Home</a>
+            </li>
+            <li class="nav-item">
+              <a href="#" class="nav-link text-white text-center">About</a>
+            </li>
+            <li class="nav-item">
+              <a href="#" class="nav-link text-white text-center">Skills</a>
+            </li>
+            <li class="nav-item">
+              <a href="#" class="nav-link text-white text-center">Experience</a>
+            </li>
+            <li class="nav-item">
+              <a href="#" class="nav-link text-white text-center">Education</a>
+            </li>
+            <li class="nav-item">
+              <a href="#" class="nav-link text-white text-center">Portfolio</a>
+            </li>
+            <li class="nav-item">
+              <a href="#" class="nav-link text-white text-center">Contact</a>
+            </li>
           </ul>
-        </nav>
-      </div>
-      <div class="header-text row justify-content-center">Sumit Gupta</div>
-    </section>
+        </div>
+
+        <div class="header-text row justify-content-center">Sumit Gupta</div>
+        <div class="row social-links">
+          <ul class="social-links-lists justify-content-center">
+            <li>
+              <a href="#" class="col-md-1"
+                ><i class="fa-brands fa-linkedin"></i
+              ></a>
+            </li>
+            <li>
+              <a href="#" class="col-md-1"
+                ><i class="fa-brands fa-square-x-twitter"></i
+              ></a>
+            </li>
+            <li>
+              <a href="#" class="col-md-1"
+                ><i class="fa-brands fa-google-plus-g"></i
+              ></a>
+            </li>
+            <li>
+              <a href="#" class="col-md-1"
+                ><i class="fa-brands fa-facebook"></i
+              ></a>
+            </li>
+            <li>
+              <a href="#" class="col-md-1"
+                ><i class="fa-brands fa-quora"></i
+              ></a>
+            </li>
+          </ul>
+        </div>
+      </section>
+    </header>
+    <main>
+      <section id="row about">
+        <div class="container">
+          <div class="container profile-img justify-content-center">
+            <img
+              src="https://static.vecteezy.com/system/resources/previews/051/270/245/non_2x/cartoon-people-avatar-minimalist-human-avatar-versatile-icon-for-online-projects-an-avatar-for-the-profile-picture-of-someone-vector.jpg"
+              alt="profile-img"
+            />
+          </div>
+          <div class="about-text">
+            Lorem, ipsum dolor sit amet consectetur adipisicing elit. Totam
+            necessitatibus repellat porro earum perspiciatis pariatur, nam
+            corrupti iure aliquid blanditiis placeat nesciunt vitae eum aperiam
+            hic id laudantium eligendi. Sequi.
+          </div>
+        </div>
+      </section>
+      <section id="skills"></section>
+      <section id="work-experience"></section>
+      <section id="education"></section>
+      <section id="portfolio"></section>
+      <section id="contact"></section>
+    </main>
   </body>
 </html>
