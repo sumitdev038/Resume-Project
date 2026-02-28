@@ -1,9 +1,10 @@
 .header-section {
     background-image: url("./image/macbook_mouse.jpg");
-    height: 65vh;
-    opacity: 0.8;
-    background-attachment: fixed;
-    position: relative;
+    height: 60vh;
+    opacity: 0.9;
+    padding: 1rem;
+    background-size: cover;
+    background-position: center;
 }
 
 .header-nav {
@@ -15,8 +16,6 @@
     list-style: none;
     justify-content: center;
     gap: 1rem;
-    padding-bottom: 55rem;
-
 }
 
 .navlist a:hover {
@@ -49,13 +48,14 @@
     color: azure;
     font-weight: bolder;
     font-size: x-large;
+    text-align: center;
 }
 
 .social-links-lists {
     display: flex;
     list-style: none;
     justify-content: center;
-    gap: 1rem;
+    gap: 2rem;
 }
 
 .social-links-lists i {
@@ -65,16 +65,15 @@
 
 .social-links-lists i:hover {
     transform: scale(1.2);
-    color: orange;
+    color: whitesmoke;
 }
 
 
 .profile-img {
-    position: absolute;
-    bottom: -80px;
+    display: flex;
+    justify-content: center;
     /* Hanging effect */
-    left: 50%;
-    transform: translateX(-50%);
+    transform: translateY(-50%);
 }
 
 .profile-img img {
@@ -88,5 +87,90 @@
 
 .profile-img img:hover {
     transform: scale(1.05);
-    box-shadow: 0 0 25px rgba(255, 140, 0, 0.7);
+    box-shadow: 0 0 25px rgba(16, 10, 3, 0.7);
+}
+
+.about-text {
+    font-size: large;
+    font-weight: 700;
+}
+
+.highlight {
+    color: blue;
+}
+
+#skills {
+    background-color: rgb(244, 240, 240);
+    padding: 2rem;
+}
+
+.skills-logo-text {
+    display: flex;
+    justify-content: center;
+
+}
+
+.skills-header {
+    color: blue;
+}
+
+.skill-bar {
+    height: 15rem;
+    width: 50%;
+    background-color: #e5e5e5;
+}
+
+.progres {
+    padding: 2rem 5rem;
+    justify-content: center;
+
+}
+
+.progress-bar {
+    font-weight: 800;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+/* Custom Colors */
+.cpp {
+    background-color: #2f5aa8 !important;
+}
+
+.html {
+    background-color: #ff5a1f !important;
+}
+
+.css {
+    background-color: #9b7c91 !important;
+}
+
+.js {
+    background-color: #0f766e !important;
+}
+
+.node {
+    background-color: #2f5aa8 !important;
+}
+
+.mongo {
+    background-color: #9b7c91 !important;
+}
+
+.work-header {
+    color: blue;
+    text-align: center;
+    padding: 2rem 0;
+}
+
+
+.work-logo {
+    margin-left: 15rem;
+    font-size: larger;
+    font-weight: 700;
+}
+
+.left-card .right-card {
+    text-align: end;
 }
