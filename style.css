@@ -61,6 +61,7 @@
 .social-links-lists i {
     color: whitesmoke;
     transition: 0.3s ease;
+    font-weight: 500;
 }
 
 .social-links-lists i:hover {
@@ -93,6 +94,7 @@
 .about-text {
     font-size: large;
     font-weight: 700;
+    margin: 5rem;
 }
 
 .highlight {
@@ -161,16 +163,202 @@
 .work-header {
     color: blue;
     text-align: center;
+    justify-content: center;
     padding: 2rem 0;
 }
 
 
 .work-logo {
-    margin-left: 15rem;
     font-size: larger;
+    font-weight: 700;
+    justify-content: start;
+}
+
+.work-title h4,
+.work-title h6,
+.work-title p {
+    text-align: end;
+    color: blue;
+}
+
+/* Timeline middle column */
+.timeline-col {
+    position: relative;
+    width: 60px;
+    flex-shrink: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.dotted-line {
+    position: absolute;
+    height: 75%;
+    width: 0;
+    border: 3px dashed #0096fa6b;
+    left: 50%;
+    top: 10%;
+}
+
+#timeline-plane {
+    position: sticky;
+    top: 15%;
+    font-size: 1.6rem;
+    color: #003f7f;
+    z-index: 1;
+    background: #f8f9fa;
+    padding: 4px 6px;
+    transform: rotate(90deg);
+}
+
+.timeline {
+    position: relative;
+    width: 100%;
+    /* border: 2px solid black; */
+}
+
+.timeline-box {
+    position: relative;
+    width: 40%;
+    left: 5%;
+    min-height: 150px;
+    /* border: 2px solid black; */
+}
+
+.timeline-box:nth-child(2n+1) {
+    left: 53%;
+}
+
+.timeline-box:nth-child(2n+1)::after {
+    content: '';
+    position: absolute;
+    top: 30%;
+    right: -13.5%;
+    border-radius: 50%;
+    width: 0.5rem;
+    height: 05rem;
+    color: red;
+    z-index: 1;
+}
+
+.timeline-box:nth-child(2n)::after {
+    content: '';
+    position: absolute;
+    top: 30%;
+    left: -13.5%;
+    border-radius: 50%;
+    width: 0.5rem;
+    height: 05rem;
+    color: red;
+}
+
+.timeline-divider {
+    position: absolute;
+    height: 75%;
+    width: 0;
+    border: 3px dashed #0096fa6b;
+    left: 50%;
+    top: 10%;
+
+}
+
+.timeline-traveller {
+    position: sticky;
+    top: 25%;
+    transform: rotate(90deg);
+}
+
+.portfolio-header {
+    color: blue;
+    text-align: center;
+    padding: 2rem 0;
+}
+
+
+
+.img-card {
+    position: relative;
+
+}
+
+.img-card img {
+    width: 90%;
+    height: 90%;
+    object-fit: cover;
+}
+
+.img-card h1 {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.6);
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    opacity: 0;
+    transition: 0.4s;
+}
+
+.img-card:hover h1 {
+    opacity: 1;
     font-weight: 700;
 }
 
-.left-card .right-card {
-    text-align: end;
+.contact-header {
+
+    text-align: center;
+    padding: 2rem 0;
+}
+
+.contact-main {
+    background-color: #341e54;
+    color: whitesmoke;
+}
+
+.feedback {
+    text-align: center;
+}
+
+.feedback input {
+    width: 80%;
+    margin-bottom: 1.5rem;
+    /* ✅ spacing */
+    background: transparent;
+    border: none;
+    border-bottom: 2px solid white;
+    color: white;
+}
+
+.feedback textarea {
+    width: 80%;
+    margin-bottom: 1.5rem;
+    /* ✅ spacing */
+    background: transparent;
+    border: none;
+    border-bottom: 2px solid white;
+    color: white;
+}
+
+.feedback button {
+    margin-top: 1rem;
+    padding: 10px 25px;
+    background: transparent;
+    border: 2px solid white;
+    color: white;
+}
+
+.feedback input:focus,
+.feedback textarea:focus {
+    outline: none;
+}
+
+.social-links {
+    padding: 2rem 0;
+    justify-content: center;
+    text-align: center;
+    /* padding-bottom: 2rem; */
 }
